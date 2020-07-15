@@ -2,6 +2,8 @@ FROM php:7.1-fpm
 
 ENV TZ=Asia/Shanghai
 
+ADD sources.list /etc/apt/
+
 RUN apt-get update && apt-get install -y \
         libfreetype6-dev \
         libjpeg62-turbo-dev \
